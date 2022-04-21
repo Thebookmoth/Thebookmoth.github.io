@@ -1,0 +1,33 @@
+<%- include('partials/head') %>
+
+    <body>
+        <%- include('partials/navbar') %>
+            <h1>Edit "<%= book.title %>"
+            </h1>
+            <form action="/book/<%= book._id %>?_method=PUT" method="POST">
+                <label for="title">Book Title</label>
+                <input type="text" name="title" value="<%=book.title %>">
+
+                <label for="author"> Author</label>
+                <input type="text" name="author" value=" <%=book.author %>">
+
+                <label for="Rating">Rating</label>
+                <input type="range" name="Rating" value="<%=book.rating %>" min="0" max="5">
+                <label for="genre">Genre</label>
+                <select name="genre" id="genre">
+                    <option value="Science Fiction" <%=book.genre==='Science Fiction' ?'selected':'' %> >Science Fiction
+                    </option>
+                    <option value="Fantasy" <%=book.genre==='Fantasy' ?'selected':''%>>Fantasy</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Horror">Horror</option>
+                </select>
+                <div>
+                    <label for="review">Review</label><br>
+                    <textarea name="review" rows="7" cols="40"><%=book.review %></textarea>
+                </div>
+                <button>Submit</button>
+            </form>
+
+            <a href="/bookshelf">Back to Bookshelf</a>
+
+            <%- include('partials/footer') %>

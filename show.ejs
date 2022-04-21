@@ -1,0 +1,23 @@
+<%- include('partials/head') %>
+
+    <body>
+        <%- include ('partials/navbar') %>
+            <h1>
+                <%= book.title %>
+            </h1>
+            <h2>By <%= book.author %>
+            </h2>
+            <h3>Rating: <%= book.rating %>
+            </h3>
+            <h4>Genre: <%= book.genre %>
+            </h4>
+            <p>
+                <%= book.review %>
+            </p>
+            <a href="/book/<%=book.id%>/edit"> Edit this book</a>
+            <form action="/book/<%= book._id %>?_method=DELETE " method="POST">
+                <button>Delete Book</button>
+            </form>
+            <a href="/bookshelf"> Back to the Bookshelf</a>
+
+            <%- include('partials/footer') %>

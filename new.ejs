@@ -1,0 +1,32 @@
+<%- include('partials/head') %>
+
+    <body>
+        <%- include('partials/navbar') %>
+            <h1>New Book Page</h1>
+            <form action="/bookshelf" method="POST">
+                <label for="title"> Book Title</label>
+                <input type="text" name="title" placeholder="Book Title">
+
+                <label for="author"> Author</label>
+                <input type="text" name="author" placeholder="Author">
+
+                <label for="rating"> Rating</label>
+                <input type="range" name="rating" min="0" max="5">
+                <label for="genre">Genre</label>
+                <select name="genre" id="genre">
+                    <% for(let genre of genres){ %>
+                        <option value="<%=genre%>">
+                            <%=genre%>
+                        </option>
+                        <% } %>
+                </select>
+                <div>
+                    <label for="review"> Review</label><br>
+                    <textarea name="review" rows="7" cols="40" placeholder="Enter your review here"></textarea>
+                </div>
+                <button>Save New Book</button>
+            </form>
+            <a href="/book/<%= book._id %>/edit "></a>
+            <a href="/bookshelf">Back to Bookshelf</a>
+
+            <%- include('partials/footer') %>
