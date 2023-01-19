@@ -149,3 +149,10 @@ footer {
     font-family: 'amatic_scregular', sans-serif;
     font-size: 20px;
 }
+
+@media (max-width:500px) {
+    .logo-placeholder {
+        width: 0px;
+        height: 0px;
+    }
+}
