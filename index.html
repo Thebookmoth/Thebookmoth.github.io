@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web-font-start.css">
+    <link rel="stylesheet" href="app2.css">
+    <title>Profile Page</title>
+</head>
+
+<body>
+
+    <navbar class="navbar">
+        <div class="logo-placeholder"></div>
+        <ul>
+            <li><a class="navbar-link" href="#home">Home</a></li>
+            <li><a class="navbar-link" href="#about">About</a></li>
+            <li><a class="navbar-link" href="#projects">Projects</a></li>
+            <li><a class="navbar-link" href="#contact">Contact</a></li>
+            <li><a class="navbar-link" href="#resume">Resume</a></li>
+        </ul>
+    </navbar>
+
+
+    <main>
+
+        <section id="home">
+            <div class="home-content align-center">
+                <h1 class="text greeting"> Hello!</h1>
+                <h2 class="text">My name is Chelsea and I am a web developer</h2>
+                <a class="text" href="">Learn more!</a>
+            </div>
+        </section>
+        <section id="about">
+            <div class="content">
+
+                <h1 class="text align-center">About me</h1>
+                <p class="text align-center">I am a full stack web developer with strong skills in communication,
+                    problem solving and
+                    initiative.</p>
+                <p class="text align-center">My expertise is in clean, responsive websites that use HTML, CSS and
+                    Javascript.
+                    I have experience with developing RESTful APIs and Bootstrap sites.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="content">
+                <h1 class="text">Projects</h1>
+                <p class="text">coming soon!!</p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="content">
+                <h1 class="text">Contact Me:</h1>
+                <p class="text">Email: chelseanharmon@gmail.com</p>
+            </div>
+        </section>
+        <section id="resume" class="content">
+            <h1 class="text">Resume</h1>
+        </section>
+
+    </main>
+    <footer class="">
+        <div class="link-container">
+            <a class="footer-link" href="">Home</a>
+            <a class="footer-link" href="">About</a>
+            <a class="footer-link" href="">Projects</a>
+            <a class="footer-link" href="">Contact</a>
+            <a class="footer-link" href="">Resume</a>
+        </div>
+
+        <p class="footer-copyright"> © 2022 copyright </p>
+    </footer>
+</body>
+<script>
+    const navbar = document.querySelector('navbar');
+    window.addEventListener('scroll', () => {
+        console.log(window.scrollY);
+        if (window.scrollY >= 50) {
+            navbar.classList.add('nav-scroll');
+        } else {
+            navbar.classList.remove('nav-scroll');
+        }
+    })
+</script>
+
+</html>

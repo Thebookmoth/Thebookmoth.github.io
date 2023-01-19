@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppinslight';
+    max-width: 700px;
+    background-color: #DCE1E3;
+    margin: auto;
+}
+
+main {
+    display: grid;
+}
+
+.align-center {
+    text-align: center;
+}
+
+navbar {
+    position: absolute;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    font-family: 'amatic_scregular', sans-serif;
+    font-size: 30px;
+    transition: 200ms ease-in-out background-color,
+        200ms ease-in-out;
+}
+
+.logo-placeholder {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #132A13;
+}
+
+navbar ul {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+navbar ul li {
+
+    list-style: none;
+    padding: 10px;
+    position: relative;
+
+}
+
+ul li a {
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    color: #5D4377;
+
+}
+
+ul li a:hover {
+    background-color: #cdb4db;
+}
+
+.nav-scroll {
+    background-color: aliceblue;
+}
+
+section {
+    height: 400px;
+    width: 100%;
+    padding: 10%;
+    display: grid;
+    place-items: center;
+    max-width: 700px;
+}
+
+#projects,
+#resume {
+    background-color: #cdb4db;
+}
+
+#about,
+#contact {
+    background-color: #98a9a1;
+
+}
+
+
+#home {
+    background-image: url(images/marita-kavelashvili-ugnrXk1129g-unsplash_opacity.75.jpg);
+    background-size: cover;
+
+}
+
+#home h1 {
+    letter-spacing: .2rem
+}
+
+#home a {
+    font-family: 'amatic_scregular', sans-serif;
+    font-size: 30px;
+    margin: 20px;
+    display: inline-block;
+    transition: 200ms ease-in-out;
+    color: #5D4377;
+}
+
+#home a:hover {
+    transform: scale(1.2);
+    color: #cdb4db;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'amaticbold';
+    font-size: 80px;
+}
+
+footer {
+    background-color: #132A13;
+
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-link {
+    color: #98a9a1;
+    font-size: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    padding-top: 10px;
+}
+
+.footer-copyright {
+    color: #98a9a1;
+    text-align: center;
+    padding: 10px;
+    font-family: 'amatic_scregular', sans-serif;
+    font-size: 20px;
+}

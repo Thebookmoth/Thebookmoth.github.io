@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'amaticbold';
+    src: url('fonts/amatic/amatic-bold-webfont.woff2') format('woff2'),
+        url('fonts/amatic/amatic-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'amatic_scregular';
+    src: url('fonts/amatic/amaticsc-regular-webfont.woff2') format('woff2'),
+        url('fonts/amatic/amaticsc-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsblack';
+    src: url('fonts/poppins/poppins-black-webfont.woff2') format('woff2'),
+        url('fonts/poppinspoppins-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinslight';
+    src: url('fonts/poppins/poppins-light-webfont.woff2') format('woff2'),
+        url('fonts/poppins/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
